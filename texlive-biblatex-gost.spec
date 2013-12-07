@@ -6,7 +6,7 @@
 # catalog-version 0.9.1
 Name:		texlive-biblatex-gost
 Version:	0.9.1
-Release:	4
+Release:	5
 Summary:	Biblatex support for GOST standard bibliographies
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-gost
