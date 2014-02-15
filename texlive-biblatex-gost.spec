@@ -1,12 +1,12 @@
-# revision 32072
+# revision 32284
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-gost
-# catalog-date 2013-11-04 18:16:29 +0100
+# catalog-date 2013-11-30 10:45:52 +0100
 # catalog-license lppl1.3
-# catalog-version 0.9.1
+# catalog-version 0.9.2
 Name:		texlive-biblatex-gost
-Version:	0.9.1
-Release:	5
+Version:	0.9.2
+Release:	1
 Summary:	Biblatex support for GOST standard bibliographies
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-gost
@@ -73,7 +73,6 @@ style GOST 7.0.5-2008.
 %doc %{_texmfdistdir}/doc/latex/biblatex-gost/biblatex-gost.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex-gost/biblatex-gost.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex-gost/ltxdockit.cfg
-%doc %{_texmfdistdir}/doc/latex/biblatex-gost/russian.idf
 
 #-----------------------------------------------------------------------
 %prep
