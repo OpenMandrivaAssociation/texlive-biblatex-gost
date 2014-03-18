@@ -1,11 +1,11 @@
-# revision 32284
+# revision 32980
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-gost
-# catalog-date 2013-11-30 10:45:52 +0100
+# catalog-date 2014-02-16 17:29:08 +0100
 # catalog-license lppl1.3
-# catalog-version 0.9.2
+# catalog-version 1.0
 Name:		texlive-biblatex-gost
-Version:	0.9.2
+Version:	1.0.0
 Release:	1
 Summary:	Biblatex support for GOST standard bibliographies
 Group:		Publishing
