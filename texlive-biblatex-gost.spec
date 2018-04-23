@@ -1,5 +1,5 @@
 Name:		texlive-biblatex-gost
-Version:	1.16
+Version:	1.17
 Release:	1
 Summary:	Biblatex support for GOST standard bibliographies
 Group:		Publishing
