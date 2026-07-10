@@ -1,40 +1,23 @@
-Name:		texlive-biblatex-gost
-Version:	66935
-Release:	1
-Summary:	Biblatex support for GOST standard bibliographies
+%global tl_name biblatex-gost
+%global tl_revision 66935
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	1.24
+Release:	%{tl_revision}.1
+Summary:	BibLaTeX support for GOST standard bibliographies
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-gost
-License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-gost.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-gost.doc.r%{version}.tar.xz
+License:	lppl1.3c
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-gost.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-gost.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+%texlive_base_requires
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The package provides biblatex support for Russian bibliography
-style GOST 7.0.5-2008.
+The package provides BibLaTeX support for Russian bibliography style
+GOST 7.0.5-2008
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/biblatex-gost
-%doc %{_texmfdistdir}/doc/latex/biblatex-gost
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc %{buildroot}%{_texmfdistdir}
